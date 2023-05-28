@@ -9,7 +9,11 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.FlxG;
 import MusicBeatState;
+#if (flixel >= "5.3.0")
+import flixel.sound.FlxSound;
+#else
 import flixel.system.FlxSound;
+#end
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;

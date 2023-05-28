@@ -5,7 +5,11 @@ import flixel.addons.display.FlxExtendedSprite;
 import Character;
 import flixel.FlxG;
 import MusicBeatState;
+#if (flixel >= "5.3.0")
+import flixel.sound.FlxSound;
+#else
 import flixel.system.FlxSound;
+#end
 
 
 class CharacterSelector extends MusicBeatState
